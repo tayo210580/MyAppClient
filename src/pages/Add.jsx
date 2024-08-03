@@ -20,7 +20,7 @@ const Add=()=> {
   const handleClick =async e=>{
     e.preventDefault()
     try{
-      await axios.post("http://https://lisr-deploy-app.herokuapp.com/books",book)
+      await axios.post("http://lisr-deploy-app.herokuapp.com/books",book)
       navigate("/")
     }catch(err){
       console.log(err)

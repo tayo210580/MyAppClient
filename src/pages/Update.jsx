@@ -23,7 +23,7 @@ const Update=()=> {
   const handleClick =async e=>{
     e.preventDefault()
     try{
-      await axios.put("http://https://lisr-deploy-app.herokuapp.com/books/"+bookId,book)
+      await axios.put("http://lisr-deploy-app.herokuapp.com/books/"+bookId,book)
       navigate("/")
     }catch(err){
       console.log(err)
