@@ -9,7 +9,7 @@ const Books=()=> {
   useEffect(()=>{
     const fetchAllBooks= async ()=>{
         try{
-          const res=await axios.get("http://lisr-deploy-app-b2b5568b83c4.herokuapp.com");
+          const res=await axios.get("http://lisr-deploy-app-b2b5568b83c4.herokuapp.com/books");
           // console.log(res)
           setBooks(res.data);
         }catch(err){
