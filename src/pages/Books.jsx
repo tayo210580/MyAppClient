@@ -9,7 +9,7 @@ const Books=()=> {
   useEffect(()=>{
     const fetchAllBooks= async ()=>{
         try{
-          const res=await axios.get("http://lisr-deploy-app.herokuapp.com/books");
+          const res=await axios.get("http://lisr-deploy-app-b2b5568b83c4.herokuapp.com");
           // console.log(res)
           setBooks(res.data);
         }catch(err){
@@ -21,7 +21,7 @@ const Books=()=> {
 
   const handleDelete= async (id)=>{
     try{
-      await axios.delete("http://lisr-deploy-app.herokuapp.com/books/"+id);
+      await axios.delete("http://lisr-deploy-app-b2b5568b83c4.herokuapp.com/books/"+id);
       window.location.reload()
     }catch(err){
       console.log(err);
