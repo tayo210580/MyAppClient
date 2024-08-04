@@ -21,7 +21,7 @@ const Books=()=> {
 
   const handleDelete= async (id)=>{
     try{
-      await axios.delete("http://lisr-deploy-app-b2b5568b83c4.herokuapp.com/books/"+id);
+      await axios.delete("https://lisr-deploy-app-b2b5568b83c4.herokuapp.com/books/"+id);
       window.location.reload()
     }catch(err){
       console.log(err);
